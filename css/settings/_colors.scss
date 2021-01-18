@@ -1,0 +1,56 @@
+// ==========================================================================
+// Settings / Config / Colors
+// ==========================================================================
+
+// Palette
+// =============================================================================
+$white: #FFFFFF;
+$black: #101010;
+$green: #99e159;
+$light-green: #77ff00;
+$beige: #D4C9C9;
+
+// Specific
+// =============================================================================
+// Link
+$link-color:       $white;
+$link-focus-color: $green;
+$link-hover-color: $light-green;
+
+// Selection
+$selection-text-color:       $white;
+$selection-background-color: $black;
+
+// Social Colors
+// =============================================================================
+$facebook-color:  #3B5998;
+$instagram-color: #E1306C;
+$youtube-color:   #CD201F;
+$twitter-color:   #1DA1F2;
+
+body {
+    margin: 0;
+    --color-text: #fff;
+    --color-bg: #101010;
+    --color-link: #fff;
+    --color-link-location: #99e159;
+    --color-link-hover: #99e159;
+    --color-alt: #7f6a57;
+    --color-bg-item1: #15171b;
+    --color-bg-item2: #2c35b7;
+    --color-bg-item3: #99e159;
+    --color-bg-item4: #1d2027;
+    --color-bg-item5: #0f1013;
+    --color-item-alt: #99e159;
+    --color-quote: #ffffff;
+    --color-info: #57535a;
+    --color-title: #6de24b;
+    --color-tagline: #e2e2e2;
+    --cursor-fill: #99e159;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    counter-reset: contentSection;
+    font-family: Inter, sans-serif;
+}

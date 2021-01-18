@@ -1,0 +1,128 @@
+.o-title {
+    margin: 0;
+    padding: rem($unit-small) 0;
+    perspective: 600px;
+    -webkit-perspective: 600px;
+}
+
+
+.o-title_line {
+    display: block;
+    opacity: 0;
+    transform-origin: center top;
+    transform-style: preserve-3d;
+    transform: translateY(100%) rotateX(-80deg);
+    transition: opacity 0.8s $Power2EaseOut, transform 0.8s $Power2EaseOut;
+    font-size: 0;
+
+    .o-title.is-inview & {
+        transform: none;
+        opacity: 1;
+
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}){
+                transition-delay: 0.3 + $i*0.1s;
+            }
+        }
+    }
+
+    span {
+        display: inline-block;
+        min-width: 0.05em;
+        font-size: $font-size-h1;
+    }
+}
+
+.content__title {
+    font-size: 9vw;
+    line-height: 0.79;
+    letter-spacing: -8px;
+    margin: 0 0 3rem;
+    max-width: 800px;
+    will-change: transform;
+    font-weight: 600;
+}
+
+.titulo-bordeado {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10vh;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    font-weight: 700;
+  }
+  .conection{
+   
+    margin-top: 500px !important;
+    
+}
+.titulo-conection{
+    
+    letter-spacing: -4px;
+    font-weight: 700;
+    color: $green;
+}
+.titulo-servicios{
+    text-align: center;
+    font-size: 14vh;
+    font-weight: 600;
+}
+.titulo-proyectos{
+    text-align: center;
+    font-size: 14vh;
+    font-weight: 600;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+}
+  @media only screen and (max-width: 600px) {
+    .conquista{
+        padding: 2rem;
+        margin-bottom: 5vh;
+        
+    }
+    .conection{
+        padding: 1rem;
+        margin-top: 6vh;
+        
+    }
+    .titulo-bordeado {
+        font-family: 'Poppins', sans-serif;
+        font-size: 5vh;
+        -webkit-text-stroke: 1px #99e159;
+        color: transparent;
+        font-weight: $bold;
+        h3{
+            margin-bottom: 2rem;    
+        }
+    }
+    .proyecto {
+        padding: 1rem;
+      }
+    .proyecto h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 6vh;
+        -webkit-text-stroke: 1px #ffffff;
+        color: transparent;
+        font-weight: 900;
+      
+      
+    }
+    .titulo-servicios{
+        font-family: 'Inter', sans-serif;
+        font-size: 4vh;
+        text-align: center;
+        font-weight: 600;
+    }
+    .titulo-nosotros{
+        font-family: 'Inter', sans-serif;
+        font-size: 2vh;
+        text-align: center;
+    }
+    .titulo-proyectos{
+        text-align: center;
+        font-size: 4vh;
+        font-weight: 600;
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+    }
+
+}

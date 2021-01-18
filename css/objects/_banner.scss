@@ -1,0 +1,41 @@
+.banner {
+    position: relative;
+    overflow: hidden;
+    max-height: 100vh;
+}
+.content {
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+#syngular-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    z-index: -100;
+}
+
+.center-right {
+    position: absolute;
+    top: 45%;
+    right: 3rem;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .instagram {
+    top: 40%;
+  }
+  
+  .spotify {
+    top: 46%;
+  }
