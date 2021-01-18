@@ -3947,6 +3947,35 @@ hr {
   }
 }
 
+carousel-caption {
+  bottom: 90px;
+}
+
+.carousel-indicators li {
+  width: 70px;
+  height: 36px;
+  border: 1px solid #222;
+}
+
+.carousel-indicators .active {
+  border: 1px solid #ff7474;
+}
+
+.carousel-title {
+  font-size: 4vh;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #99e159;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .carousel-title {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #99e159;
+  }
+}
+
 /* stylelint-disable */
 .u-2\:1::before {
   padding-bottom: 50%;
