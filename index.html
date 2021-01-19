@@ -8,8 +8,10 @@
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/favicon-sygular.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-sygular.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-sygular.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -18,6 +20,7 @@
 </head>
 
 <body>
+    <span class="ir-arriba" id="button-down">^</span>
     <nav class="menu background loading">
         <div class="menu__item menu__item--1" data-direction="bt">
             <div class="menu__item-inner">
@@ -243,7 +246,7 @@
                                         alt="First slide"> </div>
                             </div>
                         </div>
-                   
+
                     </div> <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
                             class="sr-only">Previous</span> </a> <a class="carousel-control-next"
@@ -272,7 +275,7 @@
                         <div class="carousel-item"> <img class="d-block w-100" src="img/slider/motosmart.png"
                                 alt="Sixth slide">
                         </div>
-                        </div> <a class="carousel-control-prev" href="#carouselExampleMobile" role="button"
+                    </div> <a class="carousel-control-prev" href="#carouselExampleMobile" role="button"
                         data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
                             class="sr-only">Previous</span> </a> <a class="carousel-control-next"
                         href="#carouselExampleMobile" role="button" data-slide="next"> <span
@@ -305,7 +308,8 @@
             <div class="tiles__wrap">
                 <div class="tiles__line" data-scroll="" data-scroll-speed="-2" data-scroll-target="#grid3"
                     data-scroll-direction="horizontal">
-                    <div class="tiles__line-img" style="background-image:url(img/servicios/branding/hornolo1.jpg)"></div>
+                    <div class="tiles__line-img" style="background-image:url(img/servicios/branding/hornolo1.jpg)">
+                    </div>
                     <div class="tiles__line-img" style="background-image:url(img/servicios/1.png)"></div>
                     <div class="tiles__line-img" style="background-image:url(img/servicios/5.png)"></div>
                     <div class="tiles__line-img" style="background-image:url(img/servicios/branding/kallma1.jpg"></div>
@@ -322,7 +326,8 @@
                 <div class="tiles__line" data-scroll="" data-scroll-speed="-2" data-scroll-target="#grid4"
                     data-scroll-direction="horizontal">
                     <div class="tiles__line-img"
-                        style="background-image:url(img/servicios/audiovisual-ingenieria-de-sonrisas.jpg)"></div>
+                        style="background-image:url(img/servicios/audiovisual/audiovisual-ingenieria-de-sonrisas.jpg)">
+                    </div>
                     <div class="tiles__line-img"
                         style="background-image:url(img/servicios/audiovisual-lili-correa.jpg)"></div>
                     <div class="tiles__line-img" style="background-image:url(img/servicios/audiovisual-suggy.jpg)">
@@ -353,14 +358,110 @@
             </a>
 
         </section>
-    </main>
+        <h2 class="titulo-proyectos">Nuestros proyectos</h2>
+        <div class="pro1 proyecto row vh-100">
+            <div class="col-sm-12 my-auto proyecto">
+                <h3 data-scroll="" data-scroll-speed="3" class="my-auto titulo-proyecto">Convierte+</h3>
+                <p data-scroll="" data-scroll-speed="2" class="subtitulo">Rediseñamos el universo visual de Vilma Nuñez
+                </p> <a href="convierte.html" class="link-button" data-scroll="" data-scroll-speed="3">Ver
+                    ahora</a>
+            </div>
+        </div>
+        <div class="pro2 proyecto row vh-100">
+            <div class="col-sm-12 my-auto proyecto">
+                <h3 data-scroll="" data-scroll-speed="3" class="mb-5">Academia de Consultores</h3>
+                <p data-scroll="" data-scroll-speed="2" class="subtitulo">El programa más completo en habla hispana para
+                    consultores ¡estrena imagen!
 
+                </p> <a href="academiadeconsultores.html" class="link-button my-auto">Ver ahora</a>
+            </div>
+        </div>
+        <div class="pro3 proyecto row vh-100">
+            <div class="col-sm-12 my-auto proyecto">
+                <h3 data-scroll="" data-scroll-speed="2" class="mb-5">BetAlfa</h3>
+                <p data-scroll="" data-scroll-speed="2" class="subtitulo">Un branding hecho solo para ganadores.
+
+
+                </p> <a href="betalfa.html" class="link-button pro4">Ver ahora</a>
+            </div>
+        </div>
+        <div class="pro4 proyecto row vh-100">
+            <div class="col-sm-12 my-auto proyecto">
+                <h3 data-scroll="" data-scroll-speed="2" class="mb-5">MotoSmart</h3>
+                <p data-scroll="" data-scroll-speed="2" class="subtitulo">La app para los amantes de las dos ruedas.
+
+
+                </p> <a href="motosmart.html" class="link-button">Ver ahora</a>
+            </div>
+        </div>
+        <div class="pregunta ">
+            <p class="text-center">Sabes que algo es Syngular<br> cuando te preguntas... <br> <br> <span>"¿Había visto
+                    algo
+                    así antes?"</span>
+            </p>
+            <!--  <p class="conoce text-center">Conoce nuestro trabajo:</p> -->
+        </div>
+        <section class="content content--feature cintas">
+            <div class="c-direction-block" id="direction">
+
+                <div class="c-direction-block_item -three">
+                    <span class="c-direction-block_item_inner uno" data-scroll data-scroll-direction="horizontal"
+                        data-scroll-speed="9" data-scroll-target="#direction" data-scroll-delay="0.05">
+                        unique, creative people
+                    </span>
+                </div>
+                <div class="c-direction-block_item -four dos">
+                    <span class="c-direction-block_item_inner dos" data-scroll data-scroll-direction="horizontal"
+                        data-scroll-speed="15" data-scroll-target="#direction">
+                        somos una agencia de resultados
+                    </span>
+                </div>
+                <div class="c-direction-block_item -five tres">
+                    <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal"
+                        data-scroll-speed="-20" data-scroll-target="#direction" data-scroll-delay="0.05">
+                        unique, creative people
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="container conquista conection mt-5">
+            <div class="row">
+                <div class="col">
+                    <h3 class="display-3 display-xs-5 titulo-conection" data-scroll="" data-scroll-speed="1">Conexión
+                        <br> por
+                        intuición
+                    </h3>
+                </div>
+                <div class="col">
+                    <p class="lead" data-scroll="" data-scroll-speed="1">Conectar con tu audiencia es nuestro principal
+                        objetivo. Ver las cosas diferentes, nos permite crear marcas relevantes, un poco inesperadas
+                        pero completamente funcionales.</p>
+                    <p data-scroll="" data-scroll-speed="1" class="mb-5"><b>¿Necesitas algo más?</b></p>
+                    <a href="/nosotros.html" class="conexion">Conoce
+                        nuestro equipo.</a>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+<script>
+    window.onload = () => {
+	const buttonDown = document.getElementById("button-down");
+	buttonDown.addEventListener("click", () => {
+        console.log("clicked");
+		window.scrollTo(0,0);
+	});
+};
+</script>
     <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
         crossorigin="anonymous"></script>
     <script nomodule
         src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <!--    <script src="js/js.52de0ebb.js"></script> -->
     <script src="js/ImagesLoaded.js"></script>
     <script src="js/TweenMax.js"></script>
     <script src="js/menu.js"></script>

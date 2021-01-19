@@ -24,6 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   counter-reset: contentSection;
   font-family: Inter, sans-serif;
+  height: 100%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -2448,19 +2449,19 @@ html[data-direction="up"] .c-choochoo_item.-reverse span {
 }
 
 .pro1 {
-  background-image: url("../img/conveierte+.png");
+  background-image: url("../img/proyectos/convierte/convierte+.png");
 }
 
 .pro2 {
-  background-image: url("../img/fondo-adc.png");
+  background-image: url("../img/proyectos/adc/fondo-adc.png");
 }
 
 .pro3 {
-  background-image: url("../img/betalfa/betalfa.png");
+  background-image: url("../img/proyectos/betalfa/betalfa.png");
 }
 
 .pro4 {
-  background-image: url("../img/motosmart/fondo-banner-motosmart.png");
+  background-image: url("../img/proyectos/motosmart/fondo-banner-motosmart.png");
 }
 
 .jumbotron a,
@@ -3974,6 +3975,112 @@ carousel-caption {
     margin-top: 20px;
     color: #99e159;
   }
+}
+
+.content--feature {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 0;
+}
+
+.cintas {
+  margin-top: -10%;
+  margin-bottom: 35%;
+}
+
+@media (max-width: 576px) {
+  .cintas {
+    margin-top: -70%;
+    margin-bottom: 35%;
+  }
+}
+
+.c-direction-block {
+  margin-top: 550px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  .c-direction-block {
+    top: -50vh;
+    bottom: -50vh;
+  }
+}
+
+.c-direction-block_item {
+  position: absolute;
+  font-size: 10vw;
+  white-space: nowrap;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.c-direction-block_item span {
+  display: block;
+  background-color: #99e159;
+  white-space: nowrap;
+  padding: 0 20px;
+  color: black;
+}
+
+.c-direction-block_item .uno {
+  background-color: grey;
+}
+
+.c-direction-block_item .dos {
+  background-color: #99e159;
+}
+
+.c-direction-block_item .tres {
+  background-color: white;
+}
+
+.c-direction-block_item.-one {
+  top: 33%;
+  -webkit-transform: translateX(-50vw) rotate(26deg);
+  transform: translateX(-50vw) rotate(26deg);
+}
+
+.c-direction-block_item.-two {
+  top: 45%;
+  -webkit-transform: translateX(-50vw) rotate(26deg);
+  transform: translateX(-50vw) rotate(26deg);
+}
+
+.c-direction-block_item.-three {
+  top: 55%;
+  -webkit-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+
+.c-direction-block_item.-four {
+  top: 68%;
+  -webkit-transform: translateX(-50vw) rotate(-19deg);
+  transform: translateX(-50vw) rotate(-19deg);
+}
+
+.c-direction-block_item.-five {
+  top: 63%;
+  -webkit-transform: translateX(-10vw) rotate(3deg);
+  transform: translateX(-10vw) rotate(3deg);
+}
+
+.ir-arriba {
+  display: inline-block;
+  padding: 20px;
+  background: #024959;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
 }
 
 /* stylelint-disable */
