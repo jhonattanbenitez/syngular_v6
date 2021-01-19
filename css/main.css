@@ -572,6 +572,7 @@ button:focus, button:hover,
 
 html {
   color: #fff;
+  background-color: #101010;
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
   /* [1] */
@@ -1047,7 +1048,7 @@ h6, .o-h6 {
 }
 
 .o-scroll {
-  background-color: black;
+  background-color: #101010;
   overflow: hidden;
 }
 
@@ -3239,7 +3240,7 @@ hr {
   }
   .proyecto h3 .confianza {
     width: 100vw !important;
-    background-color: #101010;
+    background-color: black;
     padding-bottom: 5rem;
     padding-right: 2rem;
     padding-left: 2rem;
