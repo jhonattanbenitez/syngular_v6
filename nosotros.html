@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Syngular</title>
+    <meta name="description" content="Scroll animations for image grids powered by Locomotive Scroll">
+    <meta name="keywords" content="locomotive scroll, scroll animation, website, javascript, demo">
+    <meta name="author" content="Codrops">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/favicon-sygular.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-sygular.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-sygular.png">
+    <link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zjs0dpp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNFZF3NJQ1"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SNFZF3NJQ1');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2598401283753621');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2598401283753621&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body class="demo-1 loading">
+    <nav class="menu">
+        <div class="menu__item menu__item--1" data-direction="bt">
+            <div class="menu__item-inner">
+                <div class="mainmenu">
+                    <a href="/" class="mainmenu__item">Inicio</a>
+                    <a href="/servicios.html" class="mainmenu__item">Servicios</a>
+                    <a href="https://blog.syngular.co/" class="mainmenu__item">Blog</a>
+                    <a href="/proyectos.html" class="mainmenu__item">Proyectos</a>
+                    <a href="/nosotros.html" class="mainmenu__item">Nosotros</a>
+                    <a href="/contacto.html" class="mainmenu__item">Contacto</a>
+                </div>
+                <p class="label label--topleft label--vert-mirror">
+                    Hecho en Syngular
+                </p>
+                <p class="label label--bottomright label--vert">
+                    made in Syngular
+                </p>
+            </div>
+        </div>
+        <div class="menu__item menu__item--2" data-direction="lr">
+            <div class="menu__item-inner">
+            
+                <video autoplay muted loop id="syngular-video">
+                    <source src="video/Syngular.webm" type="video/webm" /><!--   -->
+            </div>
+        </div>
+        <div class="menu__item menu__item--3" data-direction="bt">
+            <div class="menu__item-inner">
+                <div class="sidemenu">
+                    <a href="https://www.instagram.com/wearesyngular/" class="sidemenu__item"><span
+                            class="sidemenu__item-inner">Instagram</span></a>
+                    <a href="https://www.facebook.com/wearesyngular/" class="sidemenu__item"><span
+                            class="sidemenu__item-inner">Facebook</span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=573113792626&text&app_absent=0"
+                        class="sidemenu__item"><span class="sidemenu__item-inner">WhatsApp</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="menu__item menu__item--4" data-direction="rl">
+            <div class="menu__item-inner">
+                <p class="label label--line label--topleft">Descubre</p>
+                <a href="#" class="menu__item-link">Descarga las tendencias de marketing del 2021</a>
+            </div>
+        </div>
+        <div class="menu__item menu__item--5" data-direction="tb">
+            <div class="menu__item-inner">|
+                <p class="quote">
+                    Unique <br />
+                    <span>creative</span> <br />
+                    people
+                </p>
+            </div>
+        </div>
+        <button class="action action--menu">
+         
+            <img src="img/menu.png" alt="" class="icon--menu">
+        </button>
+        <button class="action action--close">
+ 
+            <img src="img/cerrar.png" alt="" class="icon--close">
+        </button>
+        </button>
+    </nav>
+    <div class="o-scroll" id="js-scroll" data-scroll-container>
+        <a href="/"><img src="img/syngular.png" alt="logo" class="logo mt-4 ml-4 mb-5" /></a>
+        <section class="c-section" data-scroll-section>
+            <div class="o-container" id="speed-control">
+                <div class="o-layout -gutter">
+         
+                    <div>
+                        <h1 class="titulo-nosotros-4" data-scroll="" data-scroll-speed="2">unique <br>creative
+                            <br>people </h1>
+                        <div class="container">
+
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row vh-100">
+                            <div class="col-sm ">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                            data-scroll-repeat>
+                                            <div class="o-image" data-scroll>
+                                                <img class="c-speed-block_image" src="img/nosotros/johan-molina.jpg"
+                                                    alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            CEO
+                                        </p>
+                                        <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                            data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Johan Molina
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="o-layout_item u-2/5@from-medium">
+                                    <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                                        data-scroll-call="test">
+                                        <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                            <div class="c-sections_infos_text u-text d-block d-sm-none">
+                                                <h2>Johan <span style="color: #99e159">Molina</span></h2>
+                                                <h3>Gerente de Operaciones</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                            data-scroll-repeat>
+                                            <div class="o-image" data-scroll>
+                                                <img class="c-speed-block_image" src="img/nosotros/ingrith-gartner.jpg"
+                                                    alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            Gerente de Operaciones
+                                        </p>
+                                        <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                            data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Ingrith Gärtner
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="o-layout_item u-2/5@from-medium">
+                                    <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                                        data-scroll-call="test">
+                                        <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                            <div class="c-sections_infos_text u-text d-block d-sm-none">
+                                                <h2>Ingrith <span style="color: #99e159">Gärtner</span></h2>
+                                                <h3>Gerente de Operaciones</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                            data-scroll-repeat>
+                                            <div class="o-image" data-scroll>
+                                                <img class="c-speed-block_image" src="img/nosotros/jose-barona.jpg"
+                                                    alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            Director Creativo
+                                        </p>
+                                        <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                            data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Jose Barona
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="o-layout_item u-2/5@from-medium">
+                                    <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                                        data-scroll-call="test">
+                                        <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                            <div class="c-sections_infos_text u-text d-block d-sm-none">
+                                                <h2>Jose <span style="color: #99e159">Barona</span></h2>
+                                                <h3>Director Creativo</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                        <div class="row vh-100">
+                            <div class="col-sm">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                            data-scroll-repeat>
+                                            <div class="o-image" data-scroll>
+                                                <img class="c-speed-block_image" src="img/nosotros/carlos-tascon.jpg"
+                                                    alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            Director de Marketing
+                                        </p>
+                                        <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                            data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Carlos Tascón 
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="o-layout_item u-2/5@from-medium">
+                                    <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                                        data-scroll-call="test">
+                                        <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                            <div class="c-sections_infos_text u-text d-block d-sm-none">
+                                                <h2>Carlos <span style="color: #99e159">Tascón</span></h2>
+                                                <h3>Director de Marketing</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                            data-scroll-repeat>
+                                            <div class="o-image" data-scroll>
+                                                <img class="c-speed-block_image" src="img/nosotros/alejandro-munoz.jpg"
+                                                    alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            Desarrollo Creativo
+                                        </p>
+                                        <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                            data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Alejandro Muñoz
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="o-layout_item u-2/5@from-medium">
+                                    <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                                        data-scroll-call="test">
+                                        <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                            <div class="c-sections_infos_text u-text d-block d-sm-none">
+                                                <h2>Alejandro <span style="color: #99e159">Muñoz</span></h2>
+                                                <h3>Desarrollo Creativo</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                            data-scroll-repeat>
+                                            <div class="o-image" data-scroll>
+                                                <img class="c-speed-block_image" src="img/nosotros/katerin-bejarano.jpg"
+                                                    alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            Coordinador Contable y Financiero
+                                        </p>
+                                        <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                            data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Katerin Bejarano
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="o-layout_item u-2/5@from-medium">
+                                    <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                                        data-scroll-call="test">
+                                        <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                            <div class="c-sections_infos_text u-text d-block d-sm-none">
+                                                <h2>Katerin <span style="color: #99e159">Bejarano</span></h2>
+                                                <h3>Coordinador Contable y Financiero</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                        <div class="row vh-100">
+                            <div class="col-sm">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                            data-scroll-repeat>
+                                            <div class="o-image" data-scroll>
+                                                <img class="c-speed-block_image" src="img/nosotros/manuel-mejia.jpg"
+                                                    alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            Peoductor Audiovisual
+                                        </p>
+                                        <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                            data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Manuel Mejía
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="o-layout_item u-2/5@from-medium">
+                                    <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                                        data-scroll-call="test">
+                                        <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                            <div class="c-sections_infos_text u-text d-block d-sm-none">
+                                                <h2>Manuel <span style="color: #99e159">Mejía</span></h2>
+                                                <h3>Productor Audiovisual</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                         <div class="col-sm">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                            data-scroll-repeat>
+                                            <div class="o-image" data-scroll>
+                                                <img class="c-speed-block_image" src="img/nosotros/jhonattan-benitez.jpg"
+                                                    alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            Desarrollo Web
+                                        </p>
+                                        <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                            data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Jhonattan Benitez 
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="o-layout_item u-2/5@from-medium">
+                                    <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                                        data-scroll-call="test">
+                                        <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                            <div class="c-sections_infos_text u-text d-block d-sm-none">
+                                                <h2>Jhonattan <span style="color: #99e159">Benitez</span></h2>
+                                                <h3>Desarrollo Web</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                            data-scroll-repeat>
+                                            <div class="o-image" data-scroll>
+                                                <img class="c-speed-block_image" src="img/nosotros/diego-serna.jpg"
+                                                    alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                           Marketing Digital
+                                        </p>
+                                        <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                            data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Diego Serna
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="o-layout_item u-2/5@from-medium">
+                                    <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                                        data-scroll-call="test">
+                                        <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                            <div class="c-sections_infos_text u-text d-block d-sm-none">
+                                                <h2>Diego<span style="color: #99e159">Serna</span></h2>
+                                                <h3>Gerente de Operaciones</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                        <div class="row vh-100">
+                            <div class="col-sm">
+                           
+                            </div>
+                            <div class="col-sm">
+                                <div class="o-layout_item u-3/5@from-medium">
+                                    <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                                            data-scroll-repeat>
+                                            <div class="o-image" data-scroll>
+                                                <img class="c-speed-block_image" src="img/nosotros/camilo-irurita.jpg"
+                                                    alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            Copywriter
+                                        </p>
+                                        <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                            data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            Camilo Irurita
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="o-layout_item u-2/5@from-medium">
+                                    <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                                        data-scroll-call="test">
+                                        <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                            <div class="c-sections_infos_text u-text d-block d-sm-none">
+                                                <h2>Camilo <span style="color: #99e159">Irurita</span></h2>
+                                                <h3>Copywriter</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                           
+                            </div>
+                            
+                           
+                        </div>
+
+                        
+                        <!-- fin container -->
+                    </div>
+
+                   
+
+            </div>
+            
+            <footer class="footer-style">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 footer-col">
+                            <img src="img/syngular.png" alt="logo" class="logo mb-5">
+                        </div>
+                        <div class="col-md-5 footer-col">
+                            <ul class="list-inline">
+                                <li><a href="proyectos.html">Nuestro trabajo.</a>
+                                    <hr>
+                                </li>
+                                <li><a href="servicios.html">Nuestros servicios.</a>
+                                    <hr>
+                                </li>
+                                <li><a href="nosotros.html">Nosotros.</a>
+                                    <hr>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 footer-col">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://www.instagram.com/wearesyngular/" target="blank">Instagram</a>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <a href="https://bit.ly/2UrCrCN" target="blank">WhatsApp</a>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <a href="mailto:consultor@syngular.co">Correo eléctronico</a>
+                                    <hr></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="copy" class="copy text-center mb-5"> Syngular
+                    <script>
+                        document.documentElement.className = "js";
+                        var e = function () {
+                            var e, t = document.createElement("style");
+                            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(
+                                window.CSS && window.CSS.supports && window.CSS.supports("font-weight",
+                                    "var(--tmp-var)")), t.parentNode.removeChild(t), e
+                        };
+                        e() || alert("Please view this demo in a modern browser that supports CSS Variables."), document
+                            .write((new Date).getFullYear());
+                    </script>
+                    <br> Todos los Derechos Reservados &copy;
+                </div>
+            </footer>
+        </section>
+
+    </div>
+
+
+    <script src="js/proyectos/imagesloaded.pkgd.min.6bd0b4e4.js"></script>
+    <script src="js/proyectos/js.52de0ebb.js"></script>
+    <script src="js/proyectos/TweenMax.min.c9bb299a.js"></script>
+    <script src="js/proyectos/menu.a6ce6add.js"></script>
+</body>
+
+</html>
