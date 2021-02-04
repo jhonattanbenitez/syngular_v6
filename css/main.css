@@ -2422,6 +2422,7 @@ html[data-direction="up"] .c-choochoo_item.-reverse span {
   max-width: 800px;
   will-change: transform;
   font-weight: 600;
+  text-transform: none;
 }
 
 .green-syngular {
@@ -2495,19 +2496,19 @@ html[data-direction="up"] .c-choochoo_item.-reverse span {
 }
 
 .pro1 {
-  background-image: url("../img/proyectos/convierte/convierte+.png");
+  background-image: url("../img/proyectos/convierte/convierte+.jpg");
 }
 
 .pro2 {
-  background-image: url("../img/proyectos/adc/fondo-adc.png");
+  background-image: url("../img/proyectos/adc/fondo-adc.jpg");
 }
 
 .pro3 {
-  background-image: url("../img/proyectos/betalfa/betalfa.png");
+  background-image: url("../img/proyectos/betalfa/betalfa.jpg");
 }
 
 .pro4 {
-  background-image: url("../img/proyectos/motosmart/fondo-banner-motosmart.png");
+  background-image: url("../img/proyectos/motosmart/fondo-banner-motosmart.jpg");
 }
 
 .jumbotron a,
